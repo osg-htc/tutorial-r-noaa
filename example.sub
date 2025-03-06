@@ -1,4 +1,4 @@
-container_image = ???
+container_image = osdf:///ospool/uc-shared/public/OSG-Staff/training/tidyverse.sif
 
 executable      = example.R
 arguments       = $(station_id)

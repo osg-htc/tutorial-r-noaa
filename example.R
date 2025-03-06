@@ -1,14 +1,19 @@
+#!/usr/bin/env Rscript
+
 library(glue)
 library(tidyverse)
 
-# Load useful functions from my_functions.R
+# Load useful functions from my_functions.R :
+#   - extract_temps_data()
+#   - identify_seasons()
+#   - create_histogram
 source('my_functions.R')
 
 # Read in arguments
 args <- commandArgs(trailingOnly = TRUE)
 
 # Get station ID from argument
-station_id <- str(args[1])
+station_id <- args[1]
 
 # Read data from file
 station_data_filename <- glue('{station_id}.csv')
