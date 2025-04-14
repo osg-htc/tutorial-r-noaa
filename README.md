@@ -211,3 +211,21 @@ images in the results directory!
 ``` bash
 ls -lh results/
 ```
+
+## Data movement in the OSDF
+
+The above example makes use of the `osdf://` protocol for downloading the climate data.
+This protocol tells HTCondor to transfer the data via the Open Science Data Federation,
+a nationwide system for distributing research data.
+
+Behind the scenes, 
+the OSDF is powered by the [Pelican Platform](https://pelicanplatform.org) software, 
+which grew out of the development of the original software used for running the OSDF.
+The Pelican Platform provides a variety of functionality, 
+some of which can be used directly with HTCondor and the data transfers it manages using the `osdf://` protocol.
+Other features are available via the Pelican Client.
+
+For more information on the features and functionality of OSDF and Pelican, 
+see the contents of the `pelican-features` [directory](/pelican-features),
+particularly the `pelican-client.ipynb` [Jupyter notebook](/pelican-features/pelican-client.ipynb).
+
