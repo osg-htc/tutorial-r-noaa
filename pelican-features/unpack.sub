@@ -1,0 +1,14 @@
+executable      = list-contents.sh
+
+transfer_input_files = osdf:///ospool/uc-shared/public/OSG-Staff/training/noaa/ghcnd-files.tar.gz?pack=tar.gz
+should_transfer_files = YES
+
+log    = unpack.$(Cluster).log
+output = unpack.out
+error  = unpack.err
+
+request_cpus   = 1
+request_memory = 2GB
+request_disk   = 2GB
+
+queue 1
