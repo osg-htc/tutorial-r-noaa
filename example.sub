@@ -1,6 +1,6 @@
 container_image = osdf:///ospool/uc-shared/public/OSG-Staff/training/tidyverse.sif
 
-executable      = Rscript example.R $(station_id)
+shell = Rscript example.R $(station_id)
 
 transfer_input_files = example.R, my_functions.R, data/$(station_id).csv
 transfer_output_remaps = "$(station_id).png=results/$(station_id).png"
